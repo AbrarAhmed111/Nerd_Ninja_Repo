@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Form, FormGroup, Label, Input } from 'reactstrap';
-import finger from '../../assets/finger.dbcd4bebdcd2a7af8baa.png';
-import quizlogo from '../../assets/quizlogo.png';
+import finger from '../../assets/img/finger.dbcd4bebdcd2a7af8baa.png';
+import quizlogo from '../../assets/img/quizlogo.png';
 const Demo = () => {
   const Quiz = [
     {
@@ -19,10 +19,10 @@ const Demo = () => {
   ];
 
   return (
-    <Container className='text-center text-white'>
+    <Container fluid className='text-center text-white'>
       <Row>
         <Col>
-          <h1 className='py-3 tryyourself-heading d-flex align-items-center justify-content-center'>
+          <h1 className='py-3 text-xl lg:text-6xl font-bold flex justify-center items-center w-auto'>
             Try it for yourself
             <img src={finger} alt="Heading" className='mx-4 mt-4 heading-img-width' />
           </h1>
@@ -33,9 +33,9 @@ const Demo = () => {
         {Quiz.map((question, index) => (
           <Col key={index} md={6}>
             <Row>
-              <Col className='py-4 pb-5 mx-5 my-5 tryyourself-border text-start fs-4 fw-semibold '>
+              <Col className='py-4 min-h-[400px] h-auto mx-[40px] my-5 tryyourself-border text-start text-xl '>
                 <p className='px-2 d-flex justify-content-between'>{question.statement} 
-                <img src={quizlogo} alt="Heading" className='quiz-img-width bot-img-width' />
+                <img src={quizlogo} alt="Heading" className='img-fluid quiz-img-width bot-img-width' />
                 </p>
                 <p className='px-2'>{question.question}</p>
 

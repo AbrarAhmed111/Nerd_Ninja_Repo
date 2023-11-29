@@ -1,5 +1,6 @@
 import React from 'react'
 import logoImg from '../../assets/img/nerdninjalogo.png';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Header = () => {
   return (
@@ -19,8 +20,9 @@ const Header = () => {
     {/* Nav Right Items */}
 
     <div className='flex  gap-x-3 gap-y-3 md:py-0 py-2'>
-        <button className='px-7 border-2 border-green-600 sm:px-10 sm:py-1  font-semibold rounded-full'>Login</button>
-        <button className='px-3 border-2 border-green-600 bg-green-600 sm:px-7 sm:py-1 font-semibold rounded-full'>Get Started</button>
+      <Link to="/sign-up"><button className='px-7 border-2 border-green-600 sm:px-10 sm:py-1  font-semibold rounded-full'>Login</button></Link>
+        
+       <Link to="/"><button className='px-3 border-2 border-green-600 bg-green-600 sm:px-7 sm:py-1 font-semibold rounded-full'>Get Started</button></Link> 
     </div>
 
     </div>

@@ -5,7 +5,6 @@ const Main = props => {
 	return (
 		<>
 			<div className="min-h-[100vh] text-white w-full bg-[#011D45]">
-			<Header/>
 			{props.children}
 			<Footer/>
 			</div>

@@ -1,29 +1,29 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'reactstrap';
-import done from '../../assets/getstarted.png';
-import visa from '../../assets/visa.59e5336e2cc230bd7808.png';
-import ace from '../../assets/ace.af836085d33a6015f15f.png';
+import done from '../../assets/img/getstarted.png';
+import visa from '../../assets/img/visa.59e5336e2cc230bd7808.png';
+import ace from '../../assets/img/ace.af836085d33a6015f15f.png';
 const Pricing = () => {
     return (
         <Container className='py-20 text-center text-white'>
             <Row>
                 <Col>
-                    <h1 className='my-5 get-started-heading d-flex align-items-center justify-content-center'>
+                    <h1 className='my-5 text-3xl lg:text-6xl font-bold  flex items-center justify-center'>
                         Get Started
-                        <img src={done} alt="Heading" className='heading-img-width' />
+                        <img src={done} alt="Heading" className='sm:w-[50px] md:w-[70px] mx-2' />
                     </h1>
                 </Col>
             </Row>
 
-            <Row className='mx-auto get-started-container d-flex justify-content-between align-items-center'>
+            <Row className='mx-auto px-1 get-started-container flex items-center justify-center'>
                 <Col className='pt-5 pb-2 text-center'>
-                    <h1 className='py-2'>Start Learning Faster</h1>
-                    <h3 className='py-2'>Get your first week free</h3>
-                    <h1 className='display-1 fw-bolder get-started-heading'>Only <span className='text-success'>$0.00</span></h1>
+                    <h1 className='py-2 text-4xl font-bold'>Start Learning Faster</h1>
+                    <h3 className='py- text-3xl'>Get your first week for</h3>
+                    <h1 className='display-1 fw-bolder text-5xl lg:text-6xl font-bold '>Only <span className='text-[#13D155]'>$0.00</span></h1>
                     <p className='py-3 fs-3 fw-bold'>and then $6.99 /month</p>
 
-                    <Button className='p-4 px-5 btn rounded-5 fs-2 fw-bold get-started-heading rounded-3xl' size='lg' color='primary'>Get Started</Button>
-                    <p className='py-3 fw-bold text'><em>100% Money Back Guarantee / Cancel Anytime</em></p>
+                    <Button className='p-2 px-5 py-4 btn rounded-5 font-bold text-3xl lg:text-6xl rounded-3xl' size='lg' color='primary'>Get Started</Button>
+                    <p className='py-3 font-bold text-lg'><em>100% Money Back Guarantee / Cancel Anytime</em></p>
 
                     <div className='d-flex justify-content-between align-items-center'>
 

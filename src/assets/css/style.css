@@ -9,25 +9,19 @@ body {
 
 /* Zeeshan */
 
-.reviews-heading {
-    font-size: 42px;
-    font-weight: bold;
-  }
-  @media (min-width: 992px) {
-    .reviews-heading {
-      font-size: 70px;
-    }
-  }
   .heading-img-width {
     width: 70px;
+    height: auto;
     margin-left: 5px;
     margin-bottom: 15px;
     background: transparent;
   }
   /* Image styling of reviews section */
   .image-styling {
-    max-width: 600px;
-    max-height: 402px;
+    /* max-width: 600px;
+    max-height: 402px; */
+    width: 100%;
+    height: auto;
     margin: auto;
   }
   .image-border-style {
@@ -40,15 +34,7 @@ body {
     }
   }
   /* Get started container styling */
-  .get-started-heading {
-    font-size: 42px;
-    font-weight: bold;
-  }
-  @media (min-width: 992px) {
-    .get-started-heading {
-      font-size: 70px;
-    }
-  }
+
   .get-started-container {
     border: 6px solid #13D155;
     border-radius: 40px;
