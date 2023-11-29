@@ -1,11 +1,11 @@
 import React from 'react';
-import logoImg from '../../assets/img/nerdninjalogoforfooter.png';
+import footerlogo from '../../assets/img/footer-logo.png';
 
 const Footer = () => {
   return (
     <>
     <div  className='flex flex-col gap-y-6 items-start lg:gap-y-0 lg:flex-row gap-x-28 lg:items-center pt-10 pb-20 px-12 border-t'>
-        <img src={logoImg} className='h-[40px] w-[160px]' />
+        <img src={footerlogo} className='h-[150px] w-[160px]' />
 
     <div className='flex  items-start gap-x-44 flex-wrap'>
 

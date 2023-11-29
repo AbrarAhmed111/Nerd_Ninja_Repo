@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
-import logo from '../assets/img/loginlogo.png';
+import logo from '../assets/img/header-logo.png';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 const Signup = () => {

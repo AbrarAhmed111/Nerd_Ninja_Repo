@@ -8,7 +8,9 @@ body {
 }
 
 /* Zeeshan */
-
+  .reviews  {
+    margin: 0px !important;
+  }
   .heading-img-width {
     width: 70px;
     height: auto;
@@ -18,8 +20,6 @@ body {
   }
   /* Image styling of reviews section */
   .image-styling {
-    /* max-width: 600px;
-    max-height: 402px; */
     width: 100%;
     height: auto;
     margin: auto;
@@ -32,6 +32,12 @@ body {
       margin: 0 10px !important;
       padding: 0 !important;
     }
+  }
+
+  .review-sec-border{
+    
+    border: 2px solid #13D155 !important;
+    border-radius: 20px;
   }
   /* Get started container styling */
 
@@ -79,8 +85,8 @@ body {
     border-radius: 40px;
   }
   .quiz-img-width {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 100px;
   }
   input[type="radio"]:checked {
     background-color: #13D155;

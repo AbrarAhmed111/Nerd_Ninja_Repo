@@ -4,7 +4,7 @@ import Header from "../components/header/Header";
 const Main = props => {
 	return (
 		<>
-			<div className="min-h-[100vh] text-white w-full bg-[#011D45]">
+			<div className="min-h-[100vh] text-white w-full bg-[#141e4e]">
 			{props.children}
 			<Footer/>
 			</div>

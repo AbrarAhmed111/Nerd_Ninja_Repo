@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Form, FormGroup, Label, Input } from 'reactstrap';
 import finger from '../../assets/img/finger.dbcd4bebdcd2a7af8baa.png';
-import quizlogo from '../../assets/img/quizlogo.png';
+import quizlogo from '../../assets/img/quiz-logo.png';
 const Demo = () => {
   const Quiz = [
     {
