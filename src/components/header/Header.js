@@ -8,7 +8,7 @@ const Header = () => {
     
     {/* Nav Left Items */}
     <div className='flex gap-y-3 xl:gap-y-0 md:flex-row flex-col items-start md:items-center gap-x-11 text-base md:text-lg flex-wrap'>
-        <img src={logoImg} className='w-[240px]   ' alt="" />
+        <img src={logoImg} className='w-[160px]   ' alt="" />
         <div className='flex items-center gap-x-11 flex-wrap'>
         <h3>How It Works</h3>
         <h3>Try It Out</h3>
