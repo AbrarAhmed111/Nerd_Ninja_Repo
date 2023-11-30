@@ -58,9 +58,9 @@ const Faq = () => {
   return (
     <div className='flex flex-col items-center justify-center w-full py-14 '>
         <h1 className='mb-5 font-bold text-center  text-4xl lg:text-7xl'>I bet you're wondering...</h1>
-        {faq.map((contain) => ( <div key={contain.id} onClick={() => toggleHandler(contain.id)} className={`${contain.isOpen ? 'h-[130px]' : 'h-[77px]' } ${contain.id > 0 ? '' : 'border-t'} transition-all duration-200 cursor-pointer flex flex-col   overflow-hidden w-[67%]  py-4 pb-5  border-[#a1a1a1] border-b text-2xl font-semibold`}>
-            <h1 className='flex items-end justify-between mb-4'><div className='flex items-end gap-x-2'><CiCircleQuestion/>{contain.question}</div> <span><IoIosArrowBack className={`${faqToggler ? '-rotate-90' : ''}`} /></span></h1>
-            <p className='ml-3 text-base'>{contain.answer}</p>
+        {faq.map((contain) => ( <div key={contain.id} onClick={() => toggleHandler(contain.id)} className={`${contain.isOpen ? 'h-auto md:h-[130px]' : 'h-[80px] md:h-[77px]' } ${contain.id > 0 ? '' : 'border-t'} transition-all duration-200 cursor-pointer flex flex-col   overflow-hidden w-[67%]  py-1 md:py-4 pb-5  border-[#a1a1a1] border-b text-xl md:text-2xl font-semibold`}>
+            <h1 className='flex items-end justify-between mb-4'><div className='flex items-end gap-x-2 md:pt-3'><CiCircleQuestion/>{contain.question}</div> <span><IoIosArrowBack className={`${faqToggler ? '-rotate-90' : ''}`} /></span></h1>
+            <p className='ml-3 text-base pt-4'>{contain.answer}</p>
 
         </div>
         ))}

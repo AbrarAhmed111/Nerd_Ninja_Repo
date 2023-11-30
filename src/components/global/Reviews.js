@@ -76,7 +76,7 @@ const Reviews = () => {
                                 <h1 className='font-bold text-lg'>{item.name}</h1>
                                 <p className='font-semibold'>{item.description}</p>
                             </div>
-                            <div className='text-center font-bold bg-[#13D155] px-3 rounded-lg'>
+                            <div className='text-center font-bold bg-[#13D155] px-3 my-3 rounded-lg'>
                                 <p>{item.grade}</p>
                                 <p>{item.subject}</p>
                             </div>
