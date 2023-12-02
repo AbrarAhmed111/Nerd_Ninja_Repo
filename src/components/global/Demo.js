@@ -19,6 +19,8 @@ const Demo = () => {
   ];
 
   return (
+
+    <section id='demo'>
     <Container fluid className='text-center text-white'>
       <Row>
         <Col>
@@ -55,6 +57,7 @@ const Demo = () => {
         ))}
       </Row>
     </Container>
+    </section>
   );
 }
 

@@ -18,7 +18,7 @@ const Hero = () => {
           <h5>Works on Canvas + Blackboard</h5>
           <h5>9,572+ Students Helped</h5>
         </div>
-        <button className='p-3 text-2xl font-bold bg-green-500 rounded-lg'>Add to Chrome</button>
+        <button className='p-3 text-2xl font-bold bg-[#636ce4]  rounded-lg hover:bg-[#6167b8]'>Add to Chrome</button>
       </div>
 
 

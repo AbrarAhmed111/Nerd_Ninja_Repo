@@ -4,8 +4,8 @@ import footerlogo from '../../assets/img/footer-logo.png';
 const Footer = () => {
   return (
     <>
-    <div  className='flex flex-col gap-y-6 items-start lg:gap-y-0 lg:flex-row gap-x-28 lg:items-center pt-10 pb-20 px-12 border-t'>
-        <img src={footerlogo} className='h-[150px] w-[160px]' />
+    <div  className='flex flex-col gap-y-6 items-start lg:gap-y-0 lg:flex-row  md:gap-x-28 lg:items-center pt-10 pb-20 px-12 border-t'>
+        <img src={footerlogo} className='w-[200px] md:[250px] lg:w-[300px] img-fluid ' />
 
     <div className='flex  items-start gap-x-44 flex-wrap'>
 
