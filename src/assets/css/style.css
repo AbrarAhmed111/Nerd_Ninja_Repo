@@ -6,15 +6,20 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
 body {
     padding: 0px !important;
     margin: 0px !important;
 }
 
+
+
 /* Zeeshan */
   .reviews  {
     margin: 0px !important;
   }
+
   .heading-img-width {
     width: 70px;
     height: auto;
@@ -22,12 +27,14 @@ body {
     margin-bottom: 15px;
     background: transparent;
   }
+
   /* Image styling of reviews section */
   .image-styling {
     width: 100%;
     height: auto;
     margin: auto;
   }
+  
   .image-border-style {
     margin: auto !important;
   }
@@ -100,9 +107,7 @@ body {
   .form-width{
     max-width: 500px;
   }
-  .login-logo{
-    width: 220px;
-  }
+ 
   input::placeholder {
     color: rgb(224, 209, 209) !important;
     cursor: pointer;

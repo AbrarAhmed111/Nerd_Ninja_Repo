@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImg from '../../assets/img/quiz-logo.png';
+import logoImg from '../../assets/img/quizwhiz-logo.png';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
 
       {/* Nav Left Items */}
       <div className='flex gap-y-3 xl:gap-y-0 md:flex-row flex-col items-start md:items-center gap-x-11 text-base md:text-lg flex-wrap'>
-        <img src={logoImg} className='w-[150px]   ' alt="" />
+        <img src={logoImg} className='w-[200px] hover:cursor-pointer  ' alt="" />
         <div className='flex items-center gap-x-11 flex-wrap text-xl font-bold'>
           <a href='#faqs' className='text-decoration-none'><h3 className='hover:text-[#636ce4]'>How It Works</h3> </a>
           <a href='#demo' className='text-decoration-none'> <h3 className='hover:text-[#636ce4]'   >Try It Out</h3> </a>

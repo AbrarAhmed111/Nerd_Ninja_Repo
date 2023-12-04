@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
-import logo from '../assets/img/header-logo.png';
+import logo from '../assets/img/quizwhiz-logo.png';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 const Signup = () => {
@@ -8,7 +8,7 @@ const Signup = () => {
         <Container className=' text-white'>
             <Row>
                 <Col>
-                    <img src={logo} alt='Logo' className='my-5 login-logo mx-auto' />
+                    <img src={logo} alt='Logo' className=' mx-auto w-[270px]' />
 ​
                     <Form className='mx-auto form-width text-start'> {/* Remove 'mx-auto text-center' classes */}
                         <IoArrowBackCircleOutline size={30} className='d-block' />

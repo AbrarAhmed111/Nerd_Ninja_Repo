@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
-import logo from '../assets/img/header-logo.png';
+import logo from '../assets/img/quizwhiz-logo.png';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 const Login = () => {
@@ -8,10 +8,10 @@ const Login = () => {
     <Container className='text-center text-white'>
       <Row>
         <Col>
-          <img src={logo} alt='Logo' className='my-5 login-logo mx-auto' />
+          <img src={logo} alt='logo' className='login-logo mx-auto w-[270px]' />
           
           <Form className='mx-auto form-width text-start'> {/* Remove 'mx-auto text-center' classes */}
-          <IoArrowBackCircleOutline size={30} className='d-block' />
+          <IoArrowBackCircleOutline size={30} className='d-block hover:cursor-pointer' />
           <h1 className='text-center text-[40px] font-bold my-[20px]'>Login</h1>
             <FormGroup className='mb-3'>
               <Label for='email' className='text-start'>Email address <span className='text-danger'>*</span></Label>
