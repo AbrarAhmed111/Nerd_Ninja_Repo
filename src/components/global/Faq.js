@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import { CiCircleQuestion } from "react-icons/ci";
 import { IoIosArrowBack } from "react-icons/io";
-
+import {Col, Container, Row} from 'reactstrap';
 const Faq = () => {
     const [faqToggler, setFaqToggler] = useState(false)
     const [faq, setFaq] = useState(         //Faq Array Of Object
@@ -57,7 +57,7 @@ const Faq = () => {
 
   return (
     <section id='faqs'>
-    <div className='flex flex-col items-center justify-center w-full py-14 '>
+    {/* <div className='flex flex-col items-center justify-center w-full py-14 '>
         <h1 className='mb-5 font-bold text-center text-2xl  md:text-4xl lg:text-7xl px-2'>I bet you're wondering...</h1>
         {faq.map((contain) => ( <div key={contain.id} onClick={() => toggleHandler(contain.id)} className={`${contain.isOpen ? 'h-auto md:h-[130px]' : 'h-[80px] md:h-[77px]' } ${contain.id > 0 ? '' : 'border-t'} transition-all duration-200 cursor-pointer flex flex-col   overflow-hidden w-[67%]  py-1 md:py-4 pb-5  border-[#a1a1a1] border-b text-xl md:text-2xl font-semibold`}>
             <h1 className='flex items-end justify-between mb-4'><div className='flex items-end gap-x-2 md:pt-3'><CiCircleQuestion/>{contain.question}</div> <span><IoIosArrowBack className={`${faqToggler ? '-rotate-90' : ''}`} /></span></h1>
@@ -66,9 +66,37 @@ const Faq = () => {
         </div>
         ))}
 
-    </div>
+    </div> */}
+     <Container className='my-20'>
+        <Row>
+          <Col>
+          <h1 className='text-4xl lg:text-6xl font-bold text-center py-12'>I bet you are wondering...</h1>
+            {faq.map((contain) => (
+              <div
+                key={contain.id}
+                onClick={() => toggleHandler(contain.id)}
+                className={`${contain.isOpen ? 'open' : ''}  transition-all duration-200 cursor-pointer border-b `}
+              >
+                <div className='flex  justify-between py-2'>
+                  <div className='flex items-center justify-center text-lg md:text-2xl font-bold py-2'>
+                    <CiCircleQuestion className='mx-2'/>
+                    {contain.question}
+                  </div>
+                  <span>
+                    <IoIosArrowBack className={`${faqToggler ? '-rotate-90' : ''}`} />
+                  </span>
+                </div>
+                <div className='faq-content'>{contain.isOpen && <p>{contain.answer}</p>}</div>
+              </div>
+            ))}
+          </Col>
+        </Row>
+      </Container>
     </section>
   )
 }
 
 export default Faq
+
+
+

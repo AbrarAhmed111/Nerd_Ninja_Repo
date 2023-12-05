@@ -11,37 +11,37 @@ const Reviews = () => {
         {
             id: 1,
             profilePhoto: user1,
-            rating: 4, // Provide the rating value as a number
+            rating: 5, // Provide the rating value as a number
             name: 'Maya',
             description: 'USC, freshman',
             grade: 'A+',
             subject: 'Chemisty',
             feedback:
-                "QuizWhiz: Elevate your knowledge with the power of QuizWhiz! Unleash your intellect, conquer challenges, and become a Quiz Master. Dive into a world of limitless learning and test your wisdom with QuizWhiz. Ignite your curiosity and embark on a journey of admirable achievements. Join QuizWhiz today and let the quest for knowledge begin!"
+                "Quizwhiz is a game changer. Ever since I started using it my uni work has been easy. I haven’t failed an assignment yet for my business course. I used to use ctrl-F to search through my google, but Quizwhiz instantly gives me the right answer."
 
         },
         {
             id: 2,
             profilePhoto: user2,
-            rating: 5, // Provide the rating value as a number
+            rating: 4, // Provide the rating value as a number
             name: 'Jeny',
             description: 'UT Austin, Sophomore',
             grade: 'A',
             subject: 'Physics',
             feedback:
-                "QuizWhiz: Elevate your knowledge with the power of QuizWhiz! Unleash your intellect, conquer challenges, and become a Quiz Master. Dive into a world of limitless learning and test your wisdom with QuizWhiz. Ignite your curiosity and embark on a journey of admirable achievements. Join QuizWhiz today and let the quest for knowledge begin!"
+                "DAM! Quizwhiz has made my engineering science courses a breeze. I can get my home work done in a matter of minutes with it 100% correct each time. the best part is it shows me the solution to the answer aswell which helps me understand the question more."
 
         },
         {
             id: 3,
             profilePhoto: user3,
-            rating: 3, // Provide the rating value as a number
+            rating: 5, // Provide the rating value as a number
             name: 'Nate',
             description: 'High School senior',
             grade: 'A+',
             subject: 'Mathematics',
             feedback:
-                "QuizWhiz: Elevate your knowledge with the power of QuizWhiz! Unleash your intellect, conquer challenges, and become a Quiz Master. Dive into a world of limitless learning and test your wisdom with QuizWhiz. Ignite your curiosity and embark on a journey of admirable achievements. Join QuizWhiz today and let the quest for knowledge begin!"
+                "Quizwhiz is what is gonna make me pass all my exams for law. I always check my answers against the Ai to see if I am on the right track. Would recommend this tool for any students. 10/10"
 
         },
     ];
@@ -56,7 +56,7 @@ const Reviews = () => {
             </h1>
 
 
-            <Row className="flex justify-center image-border-style text-sm w-full ">
+            <Row className="flex justify-center image-border-style w-full ">
                 {imagePaths.map((item) => (
 
 

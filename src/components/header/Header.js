@@ -46,7 +46,7 @@ const Header = () => {
             {toggle ? (
               <AiOutlineCloseCircle
                 onClick={() => setToggle(!toggle)}
-                className='mr-2 shadow-sm border rounded-full hover:text-white'
+                className='pr-2 shadow-sm border rounded-full hover:text-white'
                 size={30}
               />
             ) : (
