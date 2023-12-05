@@ -19,12 +19,14 @@ const Demo = () => {
   ];
 
   return (
+
+    <section id='demo'>
     <Container fluid className='text-center text-white'>
       <Row>
         <Col>
-          <h1 className='py-3 text-xl lg:text-6xl font-bold flex justify-center items-center w-auto'>
+          <h1 className='py-3  text-xl lg:text-6xl font-bold flex justify-center items-center w-auto'>
             Try it for yourself
-            <img src={finger} alt="Heading" className='mx-4 mt-4 heading-img-width' />
+            <img src={finger} alt="Heading" className='mx-1 md:mx-4 mt-4 heading-img-width' />
           </h1>
         </Col>
       </Row>
@@ -33,7 +35,7 @@ const Demo = () => {
         {Quiz.map((question, index) => (
           <Col key={index} md={6}>
             <Row>
-              <Col className='py-4 min-h-[400px] h-auto mx-[40px] my-5 tryyourself-border text-start text-xl '>
+              <Col className='py-4 min-h-[400px] h-auto mx-[40px] my-2 tryyourself-border text-start text-xl '>
                 <p className='px-2 d-flex justify-content-between'>{question.statement} 
                 <img src={quizlogo} alt="Heading" className='img-fluid quiz-img-width bot-img-width' />
                 </p>
@@ -55,6 +57,7 @@ const Demo = () => {
         ))}
       </Row>
     </Container>
+    </section>
   );
 }
 

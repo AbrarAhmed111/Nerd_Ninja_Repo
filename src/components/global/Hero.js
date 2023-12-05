@@ -13,12 +13,12 @@ const Hero = () => {
       <div className='flex flex-col items-start justify-center w-full py-4 lg:w-auto'>
         <h1 className='text-5xl font-bold lg:text-7xl'>Learn 3x Faster</h1>
         <h3 className='text-2xl lg:text-3xl font-semibold text-[#CACCC9]'>Your Personal Al Problem Solver</h3>
-        <div className='flex flex-col py-4 ml-5 text-2xl font-semibold gap-y-3'>
+        <div className='flex flex-col py-4 lg:ml-5 text-2xl font-semibold gap-y-3'>
           <h5>AI-powered learning</h5>
           <h5>Works on Canvas + Blackboard</h5>
           <h5>9,572+ Students Helped</h5>
         </div>
-        <button className='p-3 text-2xl font-bold bg-green-500 rounded-lg'>Add to Chrome</button>
+        <button className='p-3 text-2xl font-bold bg-[#636ce4]  rounded-lg hover:bg-[#484d96]'>Add to Chrome</button>
       </div>
 
 
