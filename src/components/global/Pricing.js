@@ -20,7 +20,7 @@ const Pricing = () => {
                 <Col className='pt-5 pb-2 text-center'>
                     <h1 className='py-2 text-4xl font-bold'>Start Learning Faster</h1>
                     <h3 className='py- text-3xl'>Get your 5 day trail for only</h3>
-                    <h1 className='display-1 fw-bolder text-5xl lg:text-6xl font-bold '>Only <span className='text-[#636ce4]'>£0.00</span></h1>
+                    <h1 className='display-1 fw-bolder text-5xl lg:text-6xl font-bold '>Only<span className='text-[#636ce4]'>£0.00</span></h1>
                     <p className='py-3 fs-3 fw-bold'>and then £14.99 /month</p>
 
                     <Button className='p-2 px-5 py-4 btn rounded-5 font-bold text-3xl lg:text-6xl rounded-3xl' size='lg' color='primary'>Get Started</Button>
