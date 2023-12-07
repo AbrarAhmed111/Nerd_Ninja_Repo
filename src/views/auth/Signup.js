@@ -1,9 +1,13 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Container, Row, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import logo from '../../assets/img/quizwhiz-logo.png';
 import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 const Signup = () => {
+    useEffect(() => {
+        // Scroll to the top when the component mounts
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <Container className=' text-white'>
             <Row>
