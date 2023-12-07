@@ -1,9 +1,12 @@
+import Footer from "../components/footer/Footer";
+
 const Auth = props => {
 	return (
 		<>
-			{/* <header>Auth Header</header> */}
+			<div className="min-h-[100vh] text-white w-full bg-[#101841]">
 			{props.children}
-			{/* <footer>Auth Footer</footer> */}
+			<Footer/>
+			</div>
 		</>
 	);
 };
