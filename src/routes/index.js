@@ -14,17 +14,17 @@ let routes = [
     layout: 'auth',
   },
   {
-    path: '/dashboard',
+    path: '/',
     component: dashboard,
     layout: 'main',
   },
   {
-    path: '/sign-up',
+    path: '/login',
     component: Login,
     layout: 'auth',
   },
   {
-    path: '/',
+    path: '/signup',
     component: Signup,
     layout: 'auth',
   },

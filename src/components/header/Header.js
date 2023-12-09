@@ -33,9 +33,9 @@ const Header = () => {
           <div className='hidden lg:block  font-semibold'>
             <div className='hidden lg:block d-xl-flex'>
               <div className='flex sm:flex-col lg:flex lg:flex-row gap-x-3 gap-y-3 md:py-0 py-2'>
-                <Link to="/sign-up"><button className='px-9 border-2 border-[#636ce4] sm:px-10 sm:py-2  font-semibold rounded-full hover:bg-[#636ce4] hover:text-white my-1'>Login</button></Link>
+                <Link to="/login"><button className='px-9 border-2 border-[#636ce4] sm:px-10 sm:py-2  font-semibold rounded-full hover:bg-[#636ce4] hover:text-white my-1'>Login</button></Link>
 
-                <Link to="/"><button className=' px-3 border-2 border-[#636ce4] bg-[#636ce4] sm:px-7 sm:py-2 font-semibold rounded-full hover:bg-transparent hover:text-white my-1'>Get Started</button></Link>
+                <Link to="/signup"><button className=' px-3 border-2 border-[#636ce4] bg-[#636ce4] sm:px-7 sm:py-2 font-semibold rounded-full hover:bg-transparent hover:text-white my-1'>Get Started</button></Link>
               </div>
             </div>
 

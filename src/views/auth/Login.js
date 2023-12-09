@@ -31,7 +31,7 @@ const Login = () => {
               <a to='/forgot-password' className='my-2 text-secondary'>Forgot Password?</a>
             </div>
             <div className='mx-auto text-center'>
-            <Link to='/dashboard'><Button color='primary' className='py-3 my-5 w-75 font-bold text-xl rounded-lg'>Login &gt;&gt;</Button></Link>
+            <Link to='/'><Button color='primary' className='py-3 my-5 w-75 font-bold text-xl rounded-lg'>Login &gt;&gt;</Button></Link>
             </div>
            
           </Form>

@@ -31,7 +31,7 @@ const Signup = () => {
                         </FormGroup>
 ​
                         <div className='mx-auto text-center'>
-                            <Link to='/sign-up'><Button className='py-3 my-5 btn w-75 font-bold text-xl rounded-lg' color='primary' >Finish Signup &gt;&gt;</Button></Link>
+                            <Link to='/login'><Button className='py-3 my-5 btn w-75 font-bold text-xl rounded-lg' color='primary' >Finish Signup &gt;&gt;</Button></Link>
                         </div>
 ​
                     </Form>
