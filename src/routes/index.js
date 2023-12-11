@@ -6,6 +6,7 @@ import Acedemic from '../views/Acedemic';
 import Login from '../views/auth/Login';
 import Signup from '../views/auth/Signup';
 import Contactus from '../views/auth/Contactus';
+import Payment from '../components/membershipPayment.js/Payment';
 
 let routes = [
   {
@@ -32,6 +33,11 @@ let routes = [
     path: '/contactus',
     component: Contactus,
     layout: 'auth',
+  },
+  {
+path:'/subscription',
+component:Payment,
+layout:'auth',
   },
   {
     path: '/privacypolicy',
