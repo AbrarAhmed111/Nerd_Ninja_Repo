@@ -26,10 +26,10 @@ const Payment = () => {
     };
     return (
         <Container fluid>
-            <Row className='pt-5 pb-5 '>
+            <Row className='pb-5 '>
 
                 {/* Left Column Content */}
-                <Col md={6} className='text-center px-20'>
+                <Col md={6} className='pt-5 text-center px-20'>
 
                     {/* This is for logo */}
 
@@ -96,7 +96,7 @@ const Payment = () => {
 
 
                 {/* Right Column Content */}
-                <Col md={6} className='px-20 text-sm py-20 bg-white text-black '>
+                <Col md={6} className='px-20 text-sm pt-5 bg-white text-black '>
 
                     <Row>
                         <Col>
