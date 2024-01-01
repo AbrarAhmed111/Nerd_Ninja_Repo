@@ -4,7 +4,7 @@ import Faq from '../components/global/Faq';
 import Demo from '../components/global/Demo';
 import Reviews from '../components/global/Reviews';
 import Pricing from '../components/global/Pricing';
-import MyAccount from '../components/global/MyAccount';
+// import MyAccount from '../components/global/MyAccount';
 const Dashboard = () => {
   useEffect(() => {
     // Scroll to the top when the component mounts
@@ -17,7 +17,7 @@ const Dashboard = () => {
     <Demo/>
     <Reviews/>
     <Pricing/>
-    <MyAccount/>
+    {/* <MyAccount/> */}
     </>
   )
 }

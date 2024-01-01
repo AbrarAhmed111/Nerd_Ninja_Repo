@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Col, Row, Container, FormGroup, Input, Label } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FaCreditCard } from "react-icons/fa";
-import { AiTwotoneEuroCircle, AiFillBank } from "react-icons/ai";
+import { AiOutlinePoundCircle, AiFillBank } from "react-icons/ai";
 import logo from '../../assets/img/quizwhiz-logo.png';
 import quizlogo from '../../assets/img/quiz-logo.png'
 import CardPay from '../paymentMethodMiniComp/CardPay';
@@ -26,16 +26,16 @@ const Payment = () => {
     };
     return (
         <Container fluid>
-            <Row className='pb-5 '>
+            <Row className=''>
 
                 {/* Left Column Content */}
-                <Col md={6} className='pt-5 text-center px-20'>
+                <Col md={6} className='pt-5  sm:px-4 md:px-20 lg:px-32'>
 
                     {/* This is for logo */}
 
                     <Row>
                         <Col>
-                            <img src={logo} alt="logo" className='w-[110px] mx-auto' />
+                            <img src={logo} alt="logo" className='w-[110px]' />
                         </Col>
 
                     </Row>
@@ -43,14 +43,14 @@ const Payment = () => {
                     <Row>
                         <Col>
                             <p className='text-xl text-gray-400 font-semibold'>Try Quizwhiz +</p>
-                            <h2 className='font-bold text-5xl py-2'>5 days free</h2>
-                            <p className='text-xl text-gray-400 font-semibold'> and then £ 699/month</p>
+                            <h2 className='font-bold text-2xl md:text-4xl lg:text-5xl py-2'>5 days free</h2>
+                            <p className='text-lg md:text-xl text-gray-400 font-semibold'>then £ 699/month</p>
                         </Col>
                     </Row>
 
 
                     <Row>
-                        <Col className='flex justify-center items-center max-w-[500px] mx-auto border-b border-gray-400'>
+                        <Col className='md:flex md:justify-center md:items-center max-w-[500px] mx-auto border-b border-gray-700'>
                             <img src={quizlogo} alt='quizlogo' className='w-[90px] mx-auto' />
 
                             <p>Quizwhiz + <span className='text-gray-400'> is a AI-powered Chrome Extension that helps students ace their tests</span> </p>
@@ -67,12 +67,12 @@ const Payment = () => {
 
                     <Row>
                         <Col className='flex justify-between py-3 mx-auto'>
-                            <button className='font-bold'>Add Promotion code</button>
+                            <button className='font-semibold bg-slate-700 rounded p-2'>Add Promotion code</button>
                         </Col>
                     </Row>
 
                     <Row>
-                        <Col className='flex justify-between py-3 text-gray-400 border-b border-gray-400 mx-auto'>
+                        <Col className='flex justify-between py-3 text-gray-400 border-b border-gray-700 mx-auto'>
                             <p>Tax</p>
                             <p>£ 0.00</p>
                         </Col>
@@ -86,7 +86,7 @@ const Payment = () => {
                     </Row>
 
                     <Row>
-                        <Col className='flex justify-between font-bold py-3 border-b border-gray-400 mx-auto'>
+                        <Col className='flex justify-between font-bold py-3 border-b border-gray-700 mx-auto'>
                             <p>Total due today</p>
                             <p>£ 0.00</p>
                         </Col>
@@ -96,11 +96,11 @@ const Payment = () => {
 
 
                 {/* Right Column Content */}
-                <Col md={6} className='px-20 text-sm pt-5 bg-white text-black '>
+                <Col md={6} className=' px-4 lg:px-20 text-sm pt-5 bg-white text-black '>
 
                     <Row>
-                        <Col>
-                            <h1 className='text-2xl font-semibold'>Enter payment details</h1>
+                        <Col md={8} className='lg:pl-12'>
+                            <h1 className='text-2xl font-semibold mb-3'>Enter payment details</h1>
                             <FormGroup>
                                 <Label for='paymentDetails' className='text-gray-400'>Email</Label>
                                 <Input type='email' id='email' className='py-3 rounded-md' />
@@ -109,26 +109,26 @@ const Payment = () => {
                     </Row>
 
                     <Row>
-                        <Col>
-                            <h1 className='text-xl font-semibold text-gray-400'>Payment method</h1>
+                        <Col md={8} className='lg:pl-12'>
+                            <h1 className='text-xl font-semibold text-gray-400 my-2'>Payment method</h1>
                             {/* Payment Method buttons */}
                             <button
                                 onClick={() => setActivePayment('CardPay')}
-                                className={`bg-white ${activePayment === 'CardPay' ? 'text-black' : 'text-gray-400'} hover:text-black mx-1 w-[140px] text-left border rounded-lg border-black p-2`}
+                                className={`bg-white ${activePayment === 'CardPay' ? 'text-black' : 'text-gray-400'} hover:text-black mx-1 w-[115px] text-left border rounded-lg border-black p-2 my-2`}
                             >
                                 <FaCreditCard size={20} />
                                 <p>Card</p>
                             </button>
                             <button
                                 onClick={() => setActivePayment('CashAppPay')}
-                                className={`bg-white ${activePayment === 'CashAppPay' ? 'text-black' : 'text-gray-400'} hover:text-black mx-1 w-[140px] text-left border rounded-lg border-black p-2`}
+                                className={`bg-white ${activePayment === 'CashAppPay' ? 'text-black' : 'text-gray-400'} hover:text-black mx-1 w-[115px] text-left border rounded-lg border-black p-2 my-2`}
                             >
-                                <AiTwotoneEuroCircle size={20} className='bg-green-400 rounded-full' />
+                                <AiOutlinePoundCircle size={20} className='rounded-full bg-green-400 text-white' />
                                 <p>Cash App</p>
                             </button>
                             <button
                                 onClick={() => setActivePayment('BankPay')}
-                                className={`bg-white ${activePayment === 'BankPay' ? 'text-black' : 'text-gray-400'} hover:text-black mx-1 w-[140px] text-left border rounded-lg border-black p-2`}
+                                className={`bg-white ${activePayment === 'BankPay' ? 'text-black ' : 'text-gray-400'} hover:text-black mx-1 w-[115px] text-left border rounded-lg border-black p-2 my-2`}
                             >
                                 <AiFillBank size={20} />
                                 <p>Bank Payment</p>

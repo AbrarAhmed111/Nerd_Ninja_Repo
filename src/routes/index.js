@@ -7,6 +7,10 @@ import Login from '../views/auth/Login';
 import Signup from '../views/auth/Signup';
 import Contactus from '../views/auth/Contactus';
 import Payment from '../components/membershipPayment.js/Payment';
+import ForgetPassword from '../views/auth/ForgetPassword';
+import OTP from '../views/auth/OTP';
+import MyAccount from '../views/auth/MyAccount';
+import ResetPassword from '../views/auth/ForgetPassword';
 
 let routes = [
   {
@@ -28,6 +32,26 @@ let routes = [
     path: '/signup',
     component: Signup,
     layout: 'auth',
+  },
+  {
+    path: '/myaccount',
+    component: MyAccount,
+    layout: 'main',
+  },
+  {
+    path: '/forgetpassword',
+    component: ForgetPassword,
+    layout:'auth',
+  },
+  {
+    path: '/otp',
+    component: OTP,
+    layout:'auth',
+  },
+  {
+    path: '/resetpassword',
+    component: ResetPassword,
+    layout:'auth',
   },
   {
     path: '/contactus',
@@ -53,6 +77,6 @@ layout:'auth',
     path: '/acedemic',
     component: Acedemic,
     layout: 'main',
-  }
+  },
 ];
 export default routes;

@@ -5,7 +5,7 @@ const BankPay = () => {
     return (
         <Container>
             <Row>
-                <Col>
+                <Col className='mb-3'>
                     <Form>
 
                         <FormGroup>

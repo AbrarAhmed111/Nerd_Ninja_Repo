@@ -5,7 +5,7 @@ const CashAppPay = () => {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className='mb-3'>
           <Form>
             {/* Name Section */}
            

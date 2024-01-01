@@ -5,7 +5,7 @@ const CardPay = () => {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className='mb-3'>
           <Form>
             {/* Card Information Section */}
             

@@ -14,7 +14,7 @@ const Header = () => {
           {/* right side of the navbar */}
           <div className='flex items-center gap-x-3 hover:cursor-pointer'>
             <div className='text-white'>
-              <img src={logoImg} alt='logo' className='w-[110px] lg:w-[270px]' />
+              <img src={logoImg} alt='logo' className='w-[110px] lg:w-[240px]' />
             </div>
           </div>
 
@@ -25,7 +25,7 @@ const Header = () => {
               <a href='#faqs' className='text-decoration-none'><h3 className='hover:text-[#636ce4] text-lg'>How It Works</h3> </a>
               <a href='#demo' className='text-decoration-none'> <h3 className='hover:text-[#636ce4] text-lg'   >Try It Out</h3> </a>
               <a href='#reviews' className='text-decoration-none'> <h3 className='hover:text-[#636ce4] text-lg'   >Reviews</h3> </a>
-              <a href='#' className='text-decoration-none '> <h3 className='hover:text-[#636ce4] text-lg'>Academic Honesty Policy</h3> </a>
+              <Link to="/acedemic" className='text-decoration-none '> <h3 className='hover:text-[#636ce4] text-lg'>Academic Honesty Policy</h3> </Link>
             </ul>
           </div>
 
